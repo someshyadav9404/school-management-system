@@ -1,0 +1,16 @@
+ school_system/          # Project settings
+├── students/               # Student models, APIs
+├── teachers/               # Teacher models, APIs
+├── classes/                # Classes, timetable
+├── attendance/             # Attendance tracking
+├── reports/                # Report cards, analytics
+├── staff/                  # Admin/staff models
+├── sms_dashboard
+
+Type of Logic	Where to Write
+Student promotion, age check	                 Student model
+Data fetching patterns	                         ModelManager / QuerySet
+Multi-model or workflow logic	                 services.py
+AI or ML functions	                            Separate ai/ app or services/ai_service.py
+External API calls (payment, email, etc.)   	utils/ or integrations/ folder
+Request/response logic	                        views.py only
